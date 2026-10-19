@@ -1,0 +1,25 @@
+BOUTIQUEFACILE — édition interface moderne
+
+Cette archive contient le code Kivy, le logo, une configuration Buildozer et un workflow GitHub Actions pour produire un APK.
+
+IMPORTANT — données existantes
+- Le programme utilise /storage/emulated/0/boutiquefacile.db.
+- Faites une copie de ce fichier avant tout essai ou mise à jour.
+- La base existante doit déjà contenir les tables attendues par le programme; le code refuse volontairement de recréer une base vide afin de ne pas faire croire que les anciennes données ont été conservées.
+- Le logo est placé à côté de main.py et inclus dans le paquet.
+
+Lancement dans Pydroid 3
+1. Décompressez l'archive dans un dossier accessible.
+2. Installez Kivy 2.3.1 dans Pydroid 3 si nécessaire.
+3. Lancez main.py.
+4. Autorisez l'accès aux fichiers si Android le demande.
+
+APK via GitHub
+1. Créez un dépôt GitHub et téléversez tout le contenu de ce dossier (y compris .github/workflows/android.yml).
+2. Ouvrez Actions, lancez « Build BoutiqueFacile APK » ou poussez sur main.
+3. Téléchargez l'artefact « BoutiqueFacile-APK » lorsque le workflow a réussi.
+
+Limites connues
+- Ce paquet n'est pas un APK déjà compilé. La compilation Android se fait sur GitHub Actions.
+- L'interface reprend des principes d'ergonomie d'une caisse de type Loyverse, sans copier son code, ses ressources ou son identité visuelle.
+- Vérifiez toutes les opérations sur une copie de la base avant de l'utiliser en boutique.
